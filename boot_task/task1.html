@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="d-flex justify-content-between align-items-center m-3 p-3">
+        <div>
+            <h2 class="fw-bold">My Learning Dasboard
+                <span class="text-muted small d-block" style="font-size: 15px;">Semester 3 · Web Development Batch</span>
+            </h2>
+        </div>
+        <button class="btn btn-primary">+ Add Course</button>
+    </div>
+
+    <div class="alert alert-warning m-4">
+        <b>Heads up!</b> Assignment 4 (Bootstrap Forms) is due this Friday. Don't leave it for the last day.
+    </div>
+
+    <div class="row m-3 g-4 text-center">
+        <div class="col-md-4">
+            <div class="card py-3">
+                <h2 class="text-primary">6</h2>
+                <span class="text-muted">Courses enrolled</span>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card py-3">
+                <h2 class="text-success">18</h2>
+                <span class="text-muted">Assignments completed</span>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card py-3">
+                <h2 class="text-danger">3</h2>
+                <span class="text-muted">Pending tasks</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row m-3 g-4">
+
+        <!-- Course Progress -->
+        <div class="col-md-8">
+            <div class="card">
+
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Course Progress</h5>
+                    <span class="badge bg-primary py-2 rounded-pill">This month</span>
+                </div>
+
+                <div class="card-body">
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>HTML & CSS</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-success" style="width: 100%;">100%</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>JavaScript Basics</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-primary" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Bootstrap 5</span>
+                            <span>55%</span>
+                        </div>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-info" style="width: 55%;">55%</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>PHP & MySQL</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-warning" style="width: 30%;">30%</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <span>React Intro</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-danger" style="width: 10%;">10%</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Quick Links -->
+        <div class="col-md-4">
+            <div class="card">
+
+                <div class="card-header">
+                    <h5 class="mb-0">Quick Links</h5>
+                </div>
+
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item active">Dashboard</li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Assignments
+                            <span class="badge bg-danger rounded-pill">3</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Messages
+                            <span class="badge bg-primary rounded-pill">12</span>
+                        </li>
+
+                        <li class="list-group-item">Certificates</li>
+
+                        <li class="list-group-item disabled" style="background-color: rgb(231, 229, 229);">
+                            Live Classes (locked)
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row m-3 g-3">
+
+        <!-- Upcoming Tasks -->
+        <div class="col-lg-4">
+            <div class="card h-100">
+
+                <div class="card-header">
+                    <h5 class="mb-0">Upcoming Tasks</h5>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Bootstrap Forms
+                        <span class="badge bg-danger rounded-pill">Due Fri</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        JS Quiz 3
+                        <span class="badge bg-warning text-dark rounded-pill">Mon</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Portfolio Page
+                        <span class="badge bg-info text-dark rounded-pill">Next wk</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Git Practice
+                        <span class="badge bg-success rounded-pill">Done</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <!-- Class Leaderboard -->
+        <div class="col-lg-8">
+            <div class="card h-100">
+
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Class Leaderboard</h5>
+                    <span class="text-muted small">Top 4 this week</span>
+                </div>
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="badge bg-primary rounded-circle p-3">AN</span>
+                            <div>
+                                <b>Anjana N.</b>
+                                <div class="text-muted small">Completed 9 tasks</div>
+                            </div>
+                        </div>
+                        <span class="badge bg-success rounded-pill">98%</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="badge bg-warning rounded-circle p-3">RS</span>
+                            <div>
+                                <b>Rahul S.</b>
+                                <div class="text-muted small">Completed 8 tasks</div>
+                            </div>
+                        </div>
+                        <span class="badge bg-success rounded-pill">92%</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="badge bg-info rounded-circle p-3">FM</span>
+                            <div>
+                                <b>Fathima M.</b>
+                                <div class="text-muted small">Completed 7 tasks</div>
+                            </div>
+                        </div>
+                        <span class="badge bg-warning text-dark rounded-pill">85%</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="badge bg-danger rounded-circle p-3">JK</span>
+                            <div>
+                                <b>Joel K.</b>
+                                <div class="text-muted small">Completed 5 tasks</div>
+                            </div>
+                        </div>
+                        <span class="badge bg-warning text-dark rounded-pill">71%</span>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js" integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq" crossorigin="anonymous"></script>
+</body>
+
+</html>
